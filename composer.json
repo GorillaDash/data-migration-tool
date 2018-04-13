@@ -1,0 +1,28 @@
+{
+    "name": "gorilladash/data-migration-tool",
+    "description": "Migrate old data to GorillaDash platform",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Casper Lai",
+            "email": "casper@gorilladash.com"
+        },
+        {
+            "name": "Anthony Gherghetta",
+            "email": "anthony@gorilladash.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "GorillaDash\\DataMigrationTool\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

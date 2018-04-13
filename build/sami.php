@@ -17,7 +17,7 @@ $versions = GitVersionCollection::create($dir)
 return new Sami($iterator, array(
     'title'                => 'GorillaDash Data Migration Tool',
     'versions'             => $versions,
-    'build_dir'            => __DIR__.'/../documents/%version%',
+    'build_dir'            => __DIR__.'/../docs/%version%',
     'cache_dir'            => __DIR__.'/cache/%version%',
     'default_opened_level' => 2,
     'remote_repository' => new GitHubRemoteRepository('GorillaDash/data-migration-tool', dirname($dir)),

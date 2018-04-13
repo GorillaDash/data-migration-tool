@@ -9,56 +9,78 @@ namespace GorillaDash\DataMigrationTool\Models;
 class Media extends Model
 {
     /**
+     * Set GraphQL mutation field name
+     *
      * @var string
      */
     protected $field = 'media';
 
     /**
+     * Batch ID
+     *
      * @var string
      */
     protected $batchId;
 
     /**
+     * Image Url
+     *
      * @var string
      */
     protected $imageUrl;
 
     /**
+     * Media Name
+     *
      * @var string
      */
     protected $mediaName;
 
     /**
+     * Tribe Slug
+     *
      * @var string
      */
     protected $tribeSlug;
 
     /**
+     * Tribe Name
+     *
      * @var string
      */
     protected $tribeName;
 
     /**
+     * Product Slug
+     *
      * @var string
      */
     protected $productSlug;
 
     /**
+     * Product Name
+     *
      * @var string
      */
     protected $productName;
 
     /**
+     * Description
+     *
      * @var string
      */
     protected $description;
 
     /**
+     * Industry
+     *
      * @var string
      */
     protected $industry;
 
     /**
+     * Share with others stores
+     *
      * @var boolean
      */
     protected $share;

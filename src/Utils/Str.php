@@ -10,6 +10,8 @@ namespace GorillaDash\DataMigrationTool\Utils;
 class Str
 {
     /**
+     * Word to camel case
+     *
      * @param $word
      *
      * @return string

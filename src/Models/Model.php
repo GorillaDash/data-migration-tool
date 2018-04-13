@@ -17,14 +17,14 @@ use GorillaDash\DataMigrationTool\Utils\Str;
 abstract class Model
 {
     /**
-     * Set GraphQL mutation field name.
+     * Set GraphQL mutation field name
      *
      * @var string
      */
     protected $field;
 
     /**
-     * Media constructor.
+     * Media constructor
      *
      * @param array $attributes
      */

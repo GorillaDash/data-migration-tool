@@ -51,6 +51,8 @@ class Client
     }
 
     /**
+     * Set Auth information
+     *
      * @param $key
      * @param $secret
      */
@@ -61,6 +63,8 @@ class Client
     }
 
     /**
+     * Request graphQL
+     *
      * @param Model $model
      *
      * @return array

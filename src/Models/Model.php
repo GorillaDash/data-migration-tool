@@ -91,6 +91,10 @@ EOF;
                 $value = $value ? 'true' : 'false';
                 return "{$key}: $value";
             }
+
+            if (is_int($value)) {
+                return "{$key}: $value";
+            }
             return "{$key}: \"{$value}\"";
         }, array_keys($parameters), $parameters);
     }

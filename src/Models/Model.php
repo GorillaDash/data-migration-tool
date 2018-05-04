@@ -92,9 +92,10 @@ EOF;
                 return "{$key}: $value";
             }
 
-            if (is_int($value)) {
+            if (is_int($value) || is_float($value)) {
                 return "{$key}: $value";
             }
+            
             return "{$key}: \"{$value}\"";
         }, array_keys($parameters), $parameters);
     }

@@ -155,6 +155,16 @@ class Tribe extends Model
     protected $useOrganisationAddress;
 
     /**
+     * @var float
+     */
+    protected $latitude;
+
+    /**
+     * @var float
+     */
+    protected $longitude;
+
+    /**
      * Get the instance as an array.
      *
      * @return mixed
@@ -195,6 +205,8 @@ class Tribe extends Model
             'opening_hours_message' => $this->openingHoursMessage,
             'show_opening_hours' => $this->showOpeningHours,
             'open_hours' => base64_encode(json_encode($this->openHours)),
+            'latitude' => $this->latitude,
+            'longitude' => $this->longitude,
         ];
 
         return $data;

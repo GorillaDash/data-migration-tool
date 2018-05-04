@@ -61,6 +61,8 @@ $tribe = new Tribe([
             'close' => '6:00pm',
         ],
     ],
+    'latitude' => 48.80013500,
+    'longitude' => 2.12356670,
 ]);
 
 try {

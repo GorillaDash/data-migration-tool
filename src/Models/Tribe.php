@@ -55,7 +55,7 @@ class Tribe extends Model
     /**
      * @var string
      */
-    protected $address;
+    protected $address1;
     /**
      * @var string
      */
@@ -181,7 +181,7 @@ class Tribe extends Model
             'postal_code' => $this->postalCode,
             'state' => $this->state,
             'locality' => $this->locality,
-            'address' => $this->address,
+            'address_1' => $this->address1,
             'address_2' => $this->address2,
             'heading' => $this->heading,
             'sub_heading' => $this->subHeading,

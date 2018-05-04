@@ -207,6 +207,7 @@ class Tribe extends Model
             'open_hours' => base64_encode(json_encode($this->openHours)),
             'latitude' => $this->latitude,
             'longitude' => $this->longitude,
+            'use_organisation_address' => $this->useOrganisationAddress,
         ];
 
         return $data;

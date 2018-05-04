@@ -95,7 +95,7 @@ class Tribe extends Model
     /**
      * @var string
      */
-    protected $mainNotification;
+    protected $mainNotificationEmail;
     /**
      * @var string
      */
@@ -191,7 +191,7 @@ class Tribe extends Model
             'introduction_bold' => $this->introductionBold,
             'introduction' => $this->introduction,
             'main_telephone' => $this->mainTelephone,
-            'main_notification' => $this->mainNotification,
+            'main_notification_email' => $this->mainNotificationEmail,
             'public_email' => $this->publicEmail,
             'tracking_code' => $this->trackingCode,
             'answer_number' => $this->answerNumber,

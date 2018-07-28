@@ -20,27 +20,11 @@ $media = new ProductCategory([
     'media' => [
         'banner' => [
             // 1 media in 1 array.
-            [
-                // url keys allow: default, banner, thumbnail, square, rectangle, origin_cropped, original_cropped_thumbnail, original_small
-                'url' => [
-                    'banner' => 'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
-                    'default' => 'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
-                ],
-            ]
+            'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg'
         ],
         'gallery' => [
-            [
-                'url' => [
-                    'banner' => 'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
-                    'default' => 'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
-                ],
-            ],
-            [
-                'url' => [
-                    'banner' => 'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
-                    'default' => 'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
-                ],
-            ],
+            'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+            'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
         ],
     ],
     'sub_heading' => 'string',
@@ -49,7 +33,8 @@ $media = new ProductCategory([
     'page_heading' => 'string',
     'page_subheading' => 'string',
 ]);
-
+var_dump($media->toArray());
+die;
 try {
     $response = $client->request($media);
 } catch (GuzzleException $ex) {

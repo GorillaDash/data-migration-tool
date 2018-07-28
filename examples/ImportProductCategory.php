@@ -27,7 +27,21 @@ $media = new ProductCategory([
                     'default' => 'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
                 ],
             ]
-        ]
+        ],
+        'gallery' => [
+            [
+                'url' => [
+                    'banner' => 'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+                    'default' => 'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
+                ],
+            ],
+            [
+                'url' => [
+                    'banner' => 'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+                    'default' => 'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
+                ],
+            ],
+        ],
     ],
     'sub_heading' => 'string',
     'caption' => 'string',

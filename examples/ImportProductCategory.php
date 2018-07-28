@@ -2,7 +2,6 @@
 require __DIR__.'/../vendor/autoload.php';
 
 use GorillaDash\DataMigrationTool\Client;
-use GorillaDash\DataMigrationTool\Models\Media;
 use GorillaDash\DataMigrationTool\Models\ProductCategory;
 use GuzzleHttp\Exception\GuzzleException;
 
@@ -32,6 +31,7 @@ $media = new ProductCategory([
     'description' => 'string',
     'page_heading' => 'string',
     'page_subheading' => 'string',
+    'overwrite' => false,
 ]);
 
 try {

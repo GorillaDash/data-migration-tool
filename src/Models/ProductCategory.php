@@ -15,7 +15,7 @@ class ProductCategory extends Model
      *
      * @var string
      */
-    protected $field = 'media';
+    protected $field = 'productCategory';
 
     /**
      * @var

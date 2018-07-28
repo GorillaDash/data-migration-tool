@@ -33,8 +33,7 @@ $media = new ProductCategory([
     'page_heading' => 'string',
     'page_subheading' => 'string',
 ]);
-var_dump($media->toArray());
-die;
+
 try {
     $response = $client->request($media);
 } catch (GuzzleException $ex) {

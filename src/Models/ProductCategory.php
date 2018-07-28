@@ -68,7 +68,7 @@ class ProductCategory extends Model
     /**
      * @var
      */
-    protected $overwrite;
+    protected $update;
 
     /**
      * Get the instance as an array.
@@ -91,7 +91,7 @@ class ProductCategory extends Model
             'page_heading' => $this->pageHeading,
             'page_subheading' => $this->pageSubheading,
             'media' => base64_encode(json_encode($this->media)),
-            'overwrite' => $this->overwrite,
+            'update' => $this->update,
         ];
     }
 }

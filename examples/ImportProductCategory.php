@@ -31,7 +31,7 @@ $media = new ProductCategory([
     'description' => 'string',
     'page_heading' => 'string',
     'page_subheading' => 'string',
-    'overwrite' => false,
+    'update' => false,
 ]);
 
 try {

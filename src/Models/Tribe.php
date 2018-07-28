@@ -17,10 +17,6 @@ class Tribe extends Model
     protected $field = 'tribe';
 
     /**
-     * @var string
-     */
-    protected $batchId;
-    /**
      * @var
      */
     protected $name;

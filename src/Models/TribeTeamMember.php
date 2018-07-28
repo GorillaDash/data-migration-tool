@@ -17,10 +17,6 @@ class TribeTeamMember extends Model
     /**
      * @var string
      */
-    protected $batchId;
-    /**
-     * @var string
-     */
     protected $tribeSlug;
     /**
      * @var string

@@ -24,6 +24,11 @@ abstract class Model
     protected $field;
 
     /**
+     * @var string
+     */
+    protected $batchId;
+
+    /**
      * Media constructor
      *
      * @param array $attributes

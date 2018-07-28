@@ -16,13 +16,6 @@ class Media extends Model
     protected $field = 'media';
 
     /**
-     * Batch ID
-     *
-     * @var string
-     */
-    protected $batchId;
-
-    /**
      * Image Url
      *
      * @var string

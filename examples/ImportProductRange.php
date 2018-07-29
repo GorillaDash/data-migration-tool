@@ -7,7 +7,7 @@ use GuzzleHttp\Exception\GuzzleException;
 
 $client = new Client('__PUT_YOUR_ORGANISATION_KEY__', '__PUT_YOUR_ORGANISATION_SECRET__');
 
-$media = new ProductRange([
+$range = new ProductRange([
     'batch_id' => 'TEST-BATCH-ID',
     'name' => 'string',
     'slug' => 'string',
@@ -40,7 +40,7 @@ $media = new ProductRange([
 ]);
 
 try {
-    $response = $client->request($media);
+    $response = $client->request($range);
 } catch (GuzzleException $ex) {
     die($ex->getMessage());
 }

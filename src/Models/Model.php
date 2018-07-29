@@ -100,6 +100,13 @@ EOF;
             if (is_int($value) || is_float($value)) {
                 return "{$key}: $value";
             }
+
+            if (is_array($value)) {
+                $value = implode(',', array_map(function ($item) {
+                    return is_string($item) ? '"'.$item.'"' : $item;
+                }, $value));
+                return "{$key}: [{$value}]";
+            }
             
             return "{$key}: \"{$value}\"";
         }, array_keys($parameters), $parameters);

@@ -94,9 +94,9 @@ class Product extends Model
     protected $customData;
 
     /**
-     * @var
+     * @var boolean
      */
-    protected $shopActive;
+    protected $shopActive = true;
 
     /**
      * @var
@@ -134,7 +134,7 @@ class Product extends Model
             'heading' => $this->heading,
             'sub_heading' => $this->subHeading,
             'caption' => $this->caption,
-            'description' => $this->description,
+            'description' => base64_encode($this->description),
             'page_heading' => $this->pageHeading,
             'page_subheading' => $this->pageSubheading,
             'media' => base64_encode(json_encode($this->media)),
@@ -153,7 +153,7 @@ class Product extends Model
         }
 
         if ($this->keywords) {
-            $data['keyword'] = $this->keywords;
+            $data['keywords'] = $this->keywords;
         }
 
         if ($this->tags) {

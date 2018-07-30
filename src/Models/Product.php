@@ -96,7 +96,7 @@ class Product extends Model
     /**
      * @var boolean
      */
-    protected $shopActive = true;
+    protected $shopActive = false;
 
     /**
      * @var

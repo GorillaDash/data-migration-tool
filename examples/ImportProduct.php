@@ -15,7 +15,7 @@ $product = new Product([
     'menu_label' => 'string',
     'heading' => 'string',
     // ==== above required =====
-    // thumbnail, banner, square, rectangle, Gallery
+    // thumbnail, banner, square, rectangle, Gallery, main
     'media' => [
         'banner' => [
             // 1 media in 1 array.

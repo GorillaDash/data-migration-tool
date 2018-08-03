@@ -32,6 +32,7 @@ $category = new ProductCategory([
     'page_heading' => 'string',
     'page_subheading' => 'string',
     'update' => false,
+    'parent_categories' => ['slug-1', 'slug-2'],
 ]);
 
 try {

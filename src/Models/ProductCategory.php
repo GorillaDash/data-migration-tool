@@ -71,6 +71,11 @@ class ProductCategory extends Model
     protected $update;
 
     /**
+     * @var array
+     */
+    protected $parentCategories;
+
+    /**
      * Get the instance as an array.
      *
      * @return mixed
@@ -92,6 +97,7 @@ class ProductCategory extends Model
             'page_subheading' => $this->pageSubheading,
             'media' => base64_encode(json_encode($this->media)),
             'update' => $this->update,
+            'parent_categories' => $this->parentCategories,
         ];
     }
 }

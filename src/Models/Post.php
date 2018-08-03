@@ -62,6 +62,16 @@ class Post extends Model
      */
     protected $queueStatus = 'Published';
 
+    /**
+     * @var
+     */
+    protected $clientName;
+
+    /**
+     * @var
+     */
+    protected $clientUrl;
+
 
     /**
      * Get the instance as an array.
@@ -82,6 +92,8 @@ class Post extends Model
             'media' => base64_encode(json_encode($this->media)),
             'queue_status' => $this->queueStatus,
             'created_at' => $this->createdAt,
+            'client_name' => $this->clientName,
+            'client_url' => $this->clientUrl,
         ];
 
         return $data;

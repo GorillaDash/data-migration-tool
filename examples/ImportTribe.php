@@ -63,6 +63,17 @@ $tribe = new Tribe([
     ],
     'latitude' => 48.80013500,
     'longitude' => 2.12356670,
+    // thumbnail, banner, square, Gallery, main, team member
+    'media' => [
+        'team_members' => [
+            'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+            'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
+        ],
+        'gallery' => [
+            'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+            'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
+        ],
+    ],
 ]);
 
 try {

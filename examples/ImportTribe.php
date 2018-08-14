@@ -63,9 +63,9 @@ $tribe = new Tribe([
     ],
     'latitude' => 48.80013500,
     'longitude' => 2.12356670,
-    // thumbnail, banner, square, Gallery, main, team member
+    // thumbnail, banner, square, Gallery, main, team
     'media' => [
-        'team_members' => [
+        'team' => [
             'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
             'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
         ],

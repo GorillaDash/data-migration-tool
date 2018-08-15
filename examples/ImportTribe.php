@@ -74,6 +74,13 @@ $tribe = new Tribe([
             'https://www.sample-videos.com/img/Sample-jpg-image-200kb.jpg',
         ],
     ],
+    'content' => [
+        'About Us' => 'About Us',
+        'Section 1 Heading' => 'Section 1 Heading',
+        'Section 1 Content' => 'Section 1 Content',
+        'Section 2 heading' => 'Section 2 heading',
+        'Section 2 Content' => 'Section 2 Content',
+    ],
 ]);
 
 try {

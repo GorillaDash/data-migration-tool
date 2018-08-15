@@ -161,9 +161,14 @@ class Tribe extends Model
     protected $longitude;
 
     /**
-     * @var
+     * @var array
      */
     protected $media;
+
+    /**
+     * @var array
+     */
+    protected $content;
 
     /**
      * Get the instance as an array.
@@ -210,6 +215,7 @@ class Tribe extends Model
             'longitude' => $this->longitude,
             'use_organisation_address' => $this->useOrganisationAddress,
             'media' => base64_encode(json_encode($this->media)),
+            'content' => base64_encode(json_encode($this->content)),
         ];
 
         return $data;

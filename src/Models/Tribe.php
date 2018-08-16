@@ -194,7 +194,7 @@ class Tribe extends Model
             'caption' => $this->caption,
             'page_heading' => $this->pageHeading,
             'page_sub_heading' => $this->pageSubHeading,
-            'introduction_bold' => $this->introductionBold,
+            'introduction_bold' => base64_encode($this->introductionBold),
             'introduction' => $this->introduction,
             'main_telephone' => $this->mainTelephone,
             'main_notification_email' => $this->mainNotificationEmail,

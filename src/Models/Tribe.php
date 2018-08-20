@@ -171,6 +171,11 @@ class Tribe extends Model
     protected $content;
 
     /**
+     * @var string
+     */
+    protected $unitOfTime = '12 hour';
+
+    /**
      * Get the instance as an array.
      *
      * @return mixed
@@ -216,6 +221,7 @@ class Tribe extends Model
             'use_organisation_address' => $this->useOrganisationAddress,
             'media' => base64_encode(json_encode($this->media)),
             'content' => base64_encode(json_encode($this->content)),
+            'unit_of_time' => $this->unitOfTime,
         ];
 
         return $data;

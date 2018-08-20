@@ -44,6 +44,7 @@ $tribe = new Tribe([
     'facebook_pixel_id' => 'facebook_pixel_id',
     'opening_hours_message' => 'opening_hours_message',
     'show_opening_hours' => true,
+    'unit_of_time' => '12 hour', // '24 hour', '12 hour'
     'open_hours' => [
         [
             'day' => 'Monday',

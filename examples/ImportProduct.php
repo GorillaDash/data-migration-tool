@@ -57,6 +57,10 @@ $product = new Product([
                 ['name' => 'Question 3', 'value' => 'answer'],
             ],
         ],
+        [
+            'name' => 'Story 1 Heading',
+            'value' => 'Product Heading'
+        ]
     ],
 //    'meta' => [],
 //    'keyword' => [],

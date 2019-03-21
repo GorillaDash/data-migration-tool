@@ -94,7 +94,7 @@ class ProductCategory extends Model
             'description' => base64_encode($this->description),
             'meta' => $this->meta,
             'page_heading' => $this->pageHeading,
-            'page_subheading' => $this->pageSubheading,
+            'page_sub_heading' => $this->pageSubheading,
             'media' => base64_encode(json_encode($this->media)),
             'update' => $this->update,
             'parent_categories' => $this->parentCategories,
